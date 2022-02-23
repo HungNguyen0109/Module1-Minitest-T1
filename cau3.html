@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="S"></h1>
+<input type="number" id="st1">
+<input type="number" id="st2">
+<button onclick="tinh()">Tính diện tích</button>
+
+<script>
+    function tinh() {
+        let a = + document.getElementById('st1').value;
+        let b = + document.getElementById('st2').value;
+        document.getElementById('S').innerHTML = 'Diện tích S là:' +(a*b);
+    }
+
+</script>
+
+</body>
+</html>

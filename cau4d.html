@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="ketqua"></p>
+<input type="text" id="nhapnam">
+<button onclick="tinh()">Run</button>
+
+<script>
+    function tinh() {
+        let a = +document.getElementById("nhapnam").value;
+        let theky = parseInt(a/100) + 1;
+        document.getElementById("ketqua").innerHTML = theky;
+    }
+</script>
+
+</body>
+</html>

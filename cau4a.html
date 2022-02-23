@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="rs"></p>
+<input type="number" id="st">
+<button onclick="tinhS()">Tính diện tích</button>
+<button onclick="tinhP()">Tính chu vi</button>
+
+<script>
+    function tinhS() {
+        let a = +document.getElementById('st').value;
+        document.getElementById('rs').innerHTML = 'Diện tích là:' + (a*a);
+    }
+
+    function tinhP() {
+        let a = +document.getElementById('st').value;
+        document.getElementById('rs').innerHTML = 'Chu vi là:' + (a*4);
+    }
+</script>
+</body>
+</html>
